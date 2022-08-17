@@ -1,0 +1,21 @@
+.card-container {
+  width: 90%;
+  display: flex;
+  margin: 2em auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5em;
+  width: 15em;
+  height: 15em;
+  background-color: rgba(200, 200, 200, 0.2);
+  border-radius: 10px;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  img {
+    width: 10em;
+  }
+}
