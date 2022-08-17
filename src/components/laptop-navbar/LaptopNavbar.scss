@@ -1,0 +1,25 @@
+.laptop-navbar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .laptop-navbar {
+        height: calc(100vh - 5.5em);
+        display: flex;
+        width: 4em;
+        flex-direction: column;
+        border-right: 2px solid var(--border-color);
+        .link {
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 1em;
+            font-size: 1.2em;
+            color: var(--text-color);
+            font-family: var(--secondary-font);
+            text-decoration: none;
+            &:hover {
+                background-color: rgba(200, 200, 200, 0.2);
+            }
+        }
+    }
+}
