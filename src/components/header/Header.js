@@ -19,9 +19,9 @@ export const Header = () => {
                 <img src={pokemonLogo} alt="Pokemon logo"/>
                 <div className={ "links " + mobileNavActive }>
                     <Link className="link" to="/">Home</Link>
-                    <Link className="link" to="/">Info</Link>
-                    <Link className="link" to="/">Shop</Link>
-                    <Link className="link" to="/">Maps</Link>
+                    <Link className="link" to="/shop">Shop</Link>
+                    <Link className="link" to="/maps">Maps</Link>
+                    <Link className="link" to="/gyms">Gyms</Link>
                 </div>
             </div>
             <div className="laptop-header">                
