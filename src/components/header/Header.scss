@@ -1,4 +1,5 @@
-.mobile-navbar {
+.mobile-header {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,18 +9,76 @@
     img {
         width: 9em;
     }
+    .hamburger {
+        cursor: pointer;
+        position: absolute;
+        left: 25px;
+        .bar {
+            display: block;
+            width: 24px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: var(--text-color);
+        }
+    }
+    .hamburger.active {
+        .bar {
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+    .links {
+        position: fixed;  
+        display: flex;
+        flex-direction: column; 
+        left: -100%;
+        background-color: #333;
+        top: 4.5em;
+        gap: 0;
+        width: 100%;
+        transition: 0.3s;
+        text-align: center;
+        .link {
+            width: 100%;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.2em;
+            font-family: var(--secondary-font);
+            border-bottom: 2px solid #555;
+            padding: 0.5em 0;
+        }
+    }
+    .links.active {
+        left: 0;
+        flex-direction: column;
+    }
 }
-.mobile-navbar .hamburger {
-    cursor: pointer;
-    position: absolute;
-    left: 25px;
-    .bar {
-        display: block;
-        width: 24px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: var(--text-color);
+.laptop-header {
+    display: none;
+}
+@media (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
+    .laptop-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 2px solid var(--border-color);
+        height: 5.5em;
+        img {
+            margin-left: 1.5em;
+            width: 12em;
+            height: fit-content;
+        }
     }
 }
