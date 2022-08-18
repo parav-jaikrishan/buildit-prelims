@@ -46,7 +46,7 @@ export const ShoppingContent = () => {
             name: 'Rowlet',
             img: rowlet,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-        },
+        }
     ];
     const [openedModal, setOpenedModal] = useState(
         Array(shoppingModals.length).fill(false)
