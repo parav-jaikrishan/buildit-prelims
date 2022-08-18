@@ -66,6 +66,7 @@ export const ShoppingContent = () => {
     return (
         <div className="shopping-content">
             <h1>Shop</h1>
+            <p>Click to open a detailed view of all the things you can buy at Pokemon's New Delhi centre.</p>
             <div className="card-container">
                 {shoppingCards.map((card, index) => {
                     return (
