@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { Card } from '../card/Card';
 import { ContentModal } from '../content-modal/ContentModal';
 import "./ShoppingContent.scss";
@@ -48,10 +48,10 @@ export const ShoppingContent = () => {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
     ];
-    const [openedModal, setOpenedModal] = React.useState(
+    const [openedModal, setOpenedModal] = useState(
         Array(shoppingModals.length).fill(false)
     );
-    const [showModal, setShowModal] = React.useState("");
+    const [showModal, setShowModal] = useState("");
     const openModal = i => {
         let arr = Array(openedModal.length).fill(false);
         arr[i] = true;
@@ -65,7 +65,7 @@ export const ShoppingContent = () => {
     return (
         <div className="shopping-content">
             <h1>Shop</h1>
-            <p>Click to open a detailed view of all the things you can buy at Pokemon's New Delhi centre.</p>
+            <p>Click to open a detailed view of all the things you can buy at Pokemon's New Delhi center.</p>
             <div className="card-container">
                 {shoppingCards.map((card, index) => {
                     return (
