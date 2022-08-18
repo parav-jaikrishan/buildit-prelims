@@ -3,7 +3,7 @@ import "./Card.scss";
 
 export const Card = (props) => {
   return (
-      <div className="card" >
+      <div onClick={props.clicked} className="card" >
         <img src={props.image} />
         <p>{props.name}</p>
       </div>
