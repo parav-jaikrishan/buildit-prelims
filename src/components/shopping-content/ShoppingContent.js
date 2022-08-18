@@ -55,9 +55,8 @@ export const ShoppingContent = () => {
     const openModal = i => {
         let arr = Array(openedModal.length).fill(false);
         arr[i] = true;
-        setOpenedModal(arr);
+        setOpenedModal([...arr]);
         setShowModal("show");
-        console.log(openedModal)
     }
     const closeModal = () => {
         setOpenedModal(Array(openedModal.length).fill(false));
@@ -76,7 +75,6 @@ export const ShoppingContent = () => {
             </div>
                 {shoppingModals.map((modal, index) => {
                     if(openedModal[index])
-                        console.log("This works")
                         return (
                             <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()}/>
                         );
