@@ -49,7 +49,7 @@ export const MapsContent = () => {
         }
     ];
     const [openedModal, setOpenedModal] = useState(
-        Array(shoppingModals.length).fill(false)
+        Array(mapModals.length).fill(false)
     );
     const [showModal, setShowModal] = useState("");
     const openModal = i => {
@@ -66,13 +66,15 @@ export const MapsContent = () => {
             <h1>Maps</h1>
             <p>These are the places you need to visit, young soldier.</p>
             <div className="card-container">
-                {shoppingCards.map((card, index) => {
+                {mapCards.map((card, index) => {
                     return (
                         <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
                     );
                 })}
             </div>
-                {shoppingModals.map((modal, index) => {
+                {
+                    //eslint-disable-next-line
+                    mapModals.map((modal, index) => {
                     if(openedModal[index])
                         return (
                             <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()}/>
