@@ -9,7 +9,9 @@ export const MapsContent = () => {
             <h1>Maps</h1>
             <p>These are the places you need to visit, young soldier.</p>
             <div className="map-div">
-                
+                <div className='left'>
+                    
+                </div>
             </div>
         </div>
     );
