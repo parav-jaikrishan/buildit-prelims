@@ -25,7 +25,7 @@
         margin: auto; 
         padding: 10px;
         border: 2px solid var(--border-color);
-        border-radius: 20px; 
+        border-radius: 10px; 
         text-align: center;
         .close {
             position: absolute;
@@ -70,13 +70,14 @@
                 padding: 0.5em 1em;
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
                 transition: all 0.3s;
-                margin: 0.5em 0 ;
+                margin: 0.5em 0 1em;
+                padding: 0.8em;
                 &:hover {
                     box-shadow: none;
                 }
             }
             .buy {
-                margin-right: 0.5em;
+                margin-right: 1em;
             }
         }
     }
