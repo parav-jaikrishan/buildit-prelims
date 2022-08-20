@@ -6,42 +6,106 @@ import "./PokedexContent.scss";
 export const PokedexContent = () => {
     const pokedexCards = [
         {
+            name: 'Qutubex',
+            img: 'assets/qutubex.png',
+            color: 'brown'
+        },
+        {
             name: 'Bulbasaur',
             img: 'assets/bulbasaur.png',
+            color: 'green'
         },
         {
-            name: 'Nidoqueen',
-            img: 'assets/nidoqueen.png',
+            name: 'Ivysaur',
+            img: 'assets/ivysaur.png',
+            color: 'green'
         },
         {
-            name: 'Groudon',
-            img: 'assets/groudon.png',
+            name: 'Venusaur',
+            img: 'assets/venusaur.png',
+            color: 'green'
         },
         {
-            name: 'Rowlet',
-            img: 'assets/rowlet.png',
+            name: 'Charmander',
+            img: 'assets/charmander.png',
+            color: 'orange'
+        },
+        {
+            name: 'Charmeleon',
+            img: 'assets/charmeleon.png',
+            color: 'orange'
+        },
+        {
+            name: 'Charizard',
+            img: 'assets/charizard.png',
+            color: 'orange'
+        },
+        {
+            name: 'Squirtle',
+            img: 'assets/squirtle.png',
+            color: 'blue'
+        },
+        {
+            name: 'Wartortle',
+            img: 'assets/wartortle.png',
+            color: 'blue'
+        },
+        {
+            name: 'Blastoise',
+            img: 'assets/blastoise.png',
+            color: 'blue'
         }
     ];
     const pokedexModals = [
         {
+            name: 'Qutubex',
+            img: 'assets/qutubex.png',
+            color: 'brown'
+        },
+        {
             name: 'Bulbasaur',
             img: 'assets/bulbasaur.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            color: 'green'
         },
         {
-            name: 'Nidoqueen',
-            img: 'assets/nidoqueen.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            name: 'Ivysaur',
+            img: 'assets/ivysaur.png',
+            color: 'green'
         },
         {
-            name: 'Groudon',
-            img: 'assets/groudon.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            name: 'Venusaur',
+            img: 'assets/venusaur.png',
+            color: 'green'
         },
         {
-            name: 'Rowlet',
-            img: 'assets/rowlet.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            name: 'Charmander',
+            img: 'assets/charmander.png',
+            color: 'orange'
+        },
+        {
+            name: 'Charmeleon',
+            img: 'assets/charmeleon.png',
+            color: 'orange'
+        },
+        {
+            name: 'Charizard',
+            img: 'assets/charizard.png',
+            color: 'orange'
+        },
+        {
+            name: 'Squirtle',
+            img: 'assets/squirtle.png',
+            color: 'blue'
+        },
+        {
+            name: 'Wartortle',
+            img: 'assets/wartortle.png',
+            color: 'blue'
+        },
+        {
+            name: 'Blastoise',
+            img: 'assets/blastoise.png',
+            color: 'blue'
         }
     ];
     const [openedModal, setOpenedModal] = useState(
