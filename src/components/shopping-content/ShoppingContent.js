@@ -112,6 +112,7 @@ export const ShoppingContent = () => {
         Array(shoppingModals.length).fill(false)
     );
     const [showModal, setShowModal] = useState("");
+    const [input, setInput] = useState("");
     const openModal = i => {
         let arr = Array(openedModal.length).fill(false);
         arr[i] = true;
@@ -122,15 +123,26 @@ export const ShoppingContent = () => {
         setOpenedModal(Array(openedModal.length).fill(false));
         setShowModal("");
     }
+    const inputHandler = (e) => {
+        setInput(e.target.value.toLowerCase());
+    }
     return (
         <div className="shopping-content">
             <h1>Shop</h1>
             <p>Click to open a detailed view of all the things you can buy at Pokemon's New Delhi center.</p>
+            <input type="text" placeholder='Search' onChange={inputHandler}/>
             <div className="card-container">
                 {shoppingCards.map((card, index) => {
-                    return (
-                        <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
-                    );
+                    if(card.name.toLowerCase().includes(input)) {
+                        return (
+                            <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
+                        );
+                    }
+                    if(input === "") {
+                        return (
+                            <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
+                        );
+                    }
                 })}
             </div>
                 {
