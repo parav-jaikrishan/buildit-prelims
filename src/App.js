@@ -3,6 +3,7 @@ import { Home } from './pages/Home';
 import { Shopping } from './pages/Shopping';
 import { Maps } from './pages/Maps';
 import { Gyms } from './pages/Gyms';
+import { Pokedex } from './pages/Pokedex';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/shop" element={<Shopping/>}/>
         <Route path="/maps" element={<Maps/>}/>
         <Route path="/gyms" element={<Gyms/>}/>
+        <Route path="/pokedex" element={<Pokedex/>}/>
       </Routes>
     </Router>
   );
