@@ -17,8 +17,9 @@
             color: var(--text-color);
             font-family: var(--secondary-font);
             text-decoration: none;
+            transition: all 0.2s;
             &:hover {
-                background-color: rgba(200, 200, 200, 0.2);
+                background-color: rgba(200, 200, 200, 0.4);
             }
         }
     }
