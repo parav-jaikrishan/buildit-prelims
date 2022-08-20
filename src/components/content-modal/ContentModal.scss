@@ -88,6 +88,7 @@
 .content-modal.show {
     transform: scale(1);
     pointer-events: all;
+    z-index: 3;
 }
 @media (min-width: 768px) {
     .content-modal .modal-content {
