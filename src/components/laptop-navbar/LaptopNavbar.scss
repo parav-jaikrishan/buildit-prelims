@@ -3,6 +3,8 @@
 }
 @media (min-width: 768px) {
     .laptop-navbar {
+        position: fixed;
+        margin-top: 5.5em;
         height: calc(100vh - 5.5em);
         display: flex;
         width: 4em;
