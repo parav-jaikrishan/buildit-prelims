@@ -69,7 +69,7 @@ export const PokedexContent = () => {
                     {
                         // eslint-disable-next-line
                         pokedexCards.map((card, index) => {
-                        if(card.name.includes(input)) {
+                        if(card.name.toLowerCase().includes(input)) {
                             return (
                                 <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
                             );
