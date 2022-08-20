@@ -60,52 +60,62 @@ export const PokedexContent = () => {
         {
             name: 'Qutubex',
             img: 'assets/qutubex.png',
-            color: 'brown'
+            color: 'brown',
+            content: `Emerged from the prehistoric walls of the renown minaret, The Qutub Minar, Qutubex is one of the specialties of Pokemon's New Delhi Centre`
         },
         {
             name: 'Bulbasaur',
             img: 'assets/bulbasaur.png',
-            color: 'green'
+            color: 'green',
+            content: `Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.`
         },
         {
             name: 'Ivysaur',
             img: 'assets/ivysaur.png',
-            color: 'green'
+            color: 'green',
+            content: `There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.`
         },
         {
             name: 'Venusaur',
             img: 'assets/venusaur.png',
-            color: 'green'
+            color: 'green',
+            content: `There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.`
         },
         {
             name: 'Charmander',
             img: 'assets/charmander.png',
-            color: 'orange'
+            color: 'orange',
+            content: `It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.`
         },
         {
             name: 'Charmeleon',
             img: 'assets/charmeleon.png',
-            color: 'orange'
+            color: 'orange',
+            content: `It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.`
         },
         {
             name: 'Charizard',
             img: 'assets/charizard.png',
-            color: 'orange'
+            color: 'orange',
+            content: `It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.`
         },
         {
             name: 'Squirtle',
             img: 'assets/squirtle.png',
-            color: 'blue'
+            color: 'blue',
+            content: `Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.`
         },
         {
             name: 'Wartortle',
             img: 'assets/wartortle.png',
-            color: 'blue'
+            color: 'blue',
+            content: `Its tail is large and covered with rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.`
         },
         {
             name: 'Blastoise',
             img: 'assets/blastoise.png',
-            color: 'blue'
+            color: 'blue',
+            content: `Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets ofwater with enough accuracy to strike empty cans from adistance of over 160 feet.`
         }
     ];
     const [openedModal, setOpenedModal] = useState(

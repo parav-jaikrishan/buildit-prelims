@@ -90,6 +90,24 @@
     pointer-events: all;
     z-index: 3;
 }
+.content-modal.brown .modal-content,
+.content-modal.orange .modal-content,
+.content-modal.blue .modal-content,
+.content-modal.green  .modal-content{
+    color: white;
+}
+.content-modal.brown .modal-content {
+    background-color: #D87F4C;
+}
+.content-modal.orange .modal-content {
+    background-color: #fb6c6c;
+}
+.content-modal.blue .modal-content {
+    background-color: #76bdfe;
+}
+.content-modal.green .modal-content {
+    background-color: #48d0b0;
+}
 @media (min-width: 768px) {
     .content-modal .modal-content {
         img {
