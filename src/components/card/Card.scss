@@ -11,14 +11,14 @@
   border-radius: 5px;
   color: var(--text-color);
   font-family: var(--secondary-font);
-  box-shadow: 0 3px 10px 0 rgba(86, 71, 137, 0.3);
   text-align: center;
+  box-shadow: none;
   transition: all 0.3s;
   img {
     height: 10em;
   }
   &:hover {
-    box-shadow: none;
+    box-shadow: 0 3px 5px 0 rgba(86, 71, 137, 0.3);
   }
 }
 @media (min-width: 768px) {
