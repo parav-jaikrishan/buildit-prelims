@@ -78,7 +78,7 @@ export const ShoppingContent = () => {
                     shoppingModals.map((modal, index) => {
                     if(openedModal[index])
                         return (
-                            <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()}/>
+                            <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()} />
                         );
                 })}
         </div>

@@ -10,6 +10,7 @@ export const ContentModal = props => {
                 <img className="shop-img" src={data.img} alt={data.name}/>
                 <h1>{data.name}</h1>
                 <p>{data.content}</p>
+                {props.buy && <button className='buy'>Buy Now</button>}
             </div>
         </div>
     );

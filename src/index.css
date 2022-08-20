@@ -1,9 +1,9 @@
 :root {
   --primary-font: "Poppins";
   --secondary-font: "Inter";
-  --border-color: #333;
-  --text-color: #cfcfcf;
-  --background-color: rgb(22, 26, 29);
+  --border-color: #564789;
+  --text-color: #38375A;
+  --background-color: #FCFCFC;
 }
 * {
   box-sizing: border-box;
