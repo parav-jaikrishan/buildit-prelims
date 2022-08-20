@@ -81,6 +81,9 @@
             }
         }
     }
+    .modal-content.map img {
+        margin-right: 25%;
+    }
 }
 .content-modal.show {
     transform: scale(1);
@@ -97,5 +100,8 @@
         p {
             font-size: 1.2em;
         }
+    }
+    .content-modal .modal-content.map img {
+        margin-right: 30%;
     }
 }
