@@ -20,11 +20,10 @@
         flex-direction: column;
         align-items: center;
         background-color: var(--background-color);
-        width: 70%; 
+        width: 90%; 
         max-width: 640px;
         margin: auto; 
         padding: 10px;
-        border: 2px solid var(--border-color);
         border-radius: 10px; 
         text-align: center;
         .close {
@@ -60,6 +59,7 @@
             width: 100%;
             justify-content: center;
             button {
+                width: 10em;
                 background-color: var(--yellow-color);
                 color: var(--purple-color);
                 font-family: var(--secondary-font);
@@ -106,6 +106,51 @@
 }
 .content-modal.green .modal-content {
     background-color: #48d0b0;
+}
+.content-modal .modal-content {
+    .stats {
+        width: 85%;
+        margin: 1em auto;
+        font-family: var(--secondary-font);
+        .row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: space-between;
+            margin-bottom: 0.5em;
+            h2 {
+                font-size: 0.9em;
+                margin-right: 4em;
+                width: 1.2em;
+            }
+            .parent-div {
+                border-radius: 100px;
+                width: 15em;
+                height: 8px;
+                display: grid;
+                background-color: var(--grey-color);
+                div {
+                    border-radius: 100px;
+                    grid-area: 1/1;
+                }
+            }
+        }
+        .row:first-of-type {
+            .parent-div  div {
+                background-color: #C16767;
+            }
+        }
+        .row:nth-of-type(2) {
+            .parent-div  div {
+                background-color: var(--purple-color);
+            }
+        }
+        .row:last-of-type {
+            .parent-div  div {
+                background-color: var(--brown-color);
+            }
+        }
+    }
 }
 @media (min-width: 768px) {
     .content-modal .modal-content {

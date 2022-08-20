@@ -17,6 +17,31 @@ export const ContentModal = props => {
                     <button className='buy' onClick={props.onClose}>Buy Now</button>
                     <button className="add" onClick={props.onClose}>Add to Cart</button>
                 </div>}
+                {data.stats && 
+                    <div className="stats">
+                        <div className="row">
+                            <h2>HP</h2>
+                            <h2>{data.stats.hp}</h2>
+                            <div className="parent-div">
+                                <div style={{width: `${data.stats.hp}%`}}></div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <h2>Attack</h2>
+                            <h2>{data.stats.attack}</h2>
+                            <div className="parent-div">
+                                <div style={{width: `${data.stats.attack}%`}}></div>
+                            </div>
+                        </div>
+                        <div className="row">
+                        <h2>Defense</h2>
+                            <h2>{data.stats.defense}</h2>
+                            <div className="parent-div">
+                                <div style={{width: `${data.stats.defense}%`}}></div>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     );

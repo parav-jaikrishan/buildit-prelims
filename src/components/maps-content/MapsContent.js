@@ -8,12 +8,21 @@ export const MapsContent = () => {
         {
             name: 'Map',
             img: 'assets/centre_map.png',
+        },
+        {
+            name: 'Gym',
+            img: 'assets/gym_2.png',
         }
     ];
     const mapModals = [
         {
             name: 'Map',
             img: 'assets/centre_map.png',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            name: 'Gym',
+            img: 'assets/gym_2.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }
     ];
@@ -32,7 +41,7 @@ export const MapsContent = () => {
     }
     return (
         <div className="maps-content">
-            <h1>Maps</h1>
+            <h1>Maps/Gyms</h1>
             <p>These are the places you need to visit, young soldier.</p>
             <div className="card-container">
                 {mapCards.map((card, index) => {
