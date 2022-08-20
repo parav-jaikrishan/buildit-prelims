@@ -7,18 +7,18 @@
   margin-bottom: 2em;
   width: 15em;
   height: 15em;
-  padding: 2em;
   background-color: rgba(200, 200, 200, 0.2);
-  border-radius: 10px;
+  border-radius: 5px;
   color: var(--text-color);
   font-family: var(--secondary-font);
+  box-shadow: 0 3px 10px 0 rgba(86, 71, 137, 0.3);
   text-align: center;
   transition: all 0.3s;
   img {
     height: 10em;
   }
   &:hover {
-    transform: scale(1.1)
+    box-shadow: none;
   }
 }
 @media (min-width: 768px) {

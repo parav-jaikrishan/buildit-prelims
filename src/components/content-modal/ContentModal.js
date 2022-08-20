@@ -12,7 +12,11 @@ export const ContentModal = props => {
                 <h1>{data.name}</h1>
                 <p>{data.content}</p>
                 { data.cost && <p className="cost">Cost: {data.cost} <FaCoins/></p>}
-                {buy && <button className='buy' onClick={props.onClose}>Buy Now</button>}
+                {buy && 
+                <div className="buttons">
+                    <button className='buy' onClick={props.onClose}>Buy Now</button>
+                    <button className="add" onClick={props.onClose}>Add to Cart</button>
+                </div>}
             </div>
         </div>
     );
