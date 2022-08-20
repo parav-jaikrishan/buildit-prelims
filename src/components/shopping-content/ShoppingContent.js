@@ -6,48 +6,38 @@ import "./ShoppingContent.scss";
 export const ShoppingContent = () => {
     const shoppingCards = [
         {
-            name: 'Bulbasaur',
-            img: 'assets/bulbasaur.png'
+            name: 'Health Potion',
+            img: 'assets/potion_health.png'
 
         },
         {
-            name: 'Nidoqueen',
-            img: 'assets/nidoqueen.png'
+            name: 'Recovery Potion',
+            img: 'assets/potion_recovery.png'
         },
         {
-            name: 'Groudon',
-            img: 'assets/groudon.png'
-        },
-        {
-            name: 'Rowlet',
-            img: 'assets/rowlet.png'
+            name: 'Speed Potion',
+            img: 'assets/potion_speed.png'
         }
     ];
     const shoppingModals = [
         {
-            name: 'Bulbasaur',
-            img: 'assets/bulbasaur.png',
+            name: 'Health Potion',
+            img: 'assets/potion_health.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             cost: 50
         },
         {
-            name: 'Nidoqueen',
-            img: 'assets/nidoqueen.png',
+            name: 'Recovery Potion',
+            img: 'assets/potion_recovery.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             cost: 80
         },
         {
-            name: 'Groudon',
-            img: 'assets/groudon.png',
+            name: 'Speed Potion',
+            img: 'assets/potion_speed.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             cost: 70
         },
-        {
-            name: 'Rowlet',
-            img: 'assets/rowlet.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            cost: 90
-        }
     ];
     const [openedModal, setOpenedModal] = useState(
         Array(shoppingModals.length).fill(false)

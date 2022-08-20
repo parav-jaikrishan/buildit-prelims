@@ -3,7 +3,7 @@ import "./LaptopNavbar.scss";
 import { Link } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaMapMarkedAlt } from "react-icons/fa";
 import { GiGymBag } from "react-icons/gi";
-import { AiFillInfoCircle } from "react-icons/ai"
+import { TbPokeball } from "react-icons/tb";
 
 export const LaptopNavbar = () => {
     return (
@@ -12,6 +12,7 @@ export const LaptopNavbar = () => {
             <Link className="link" to="/shop" title="Shopping"><FaShoppingCart className="icon"/></Link>
             <Link className="link" to="/maps" title="Maps"><FaMapMarkedAlt className="icon"/></Link>
             <Link className="link" to="/gyms" title="Gyms"><GiGymBag className="icon"/></Link>
+            <Link className="link" to="/pokedex" title="Pokedex"><TbPokeball className="icon"/></Link>
         </div>
     );
 }

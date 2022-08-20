@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContentModal.scss";
+import { FaCoins } from 'react-icons/fa';
 
 export const ContentModal = props => {
     const { data, show, buy } = props;
@@ -10,7 +11,7 @@ export const ContentModal = props => {
                 <img className="shop-img" src={data.img} alt={data.name}/>
                 <h1>{data.name}</h1>
                 <p>{data.content}</p>
-                { data.cost && <p className="cost">Cost: {data.cost}</p>}
+                { data.cost && <p className="cost">Cost: {data.cost} <FaCoins/></p>}
                 {buy && <button className='buy' onClick={props.onClose}>Buy Now</button>}
             </div>
         </div>
