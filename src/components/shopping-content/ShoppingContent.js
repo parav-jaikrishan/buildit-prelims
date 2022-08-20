@@ -2,50 +2,51 @@ import React, { useState } from 'react';
 import { Card } from '../card/Card';
 import { ContentModal } from '../content-modal/ContentModal';
 import "./ShoppingContent.scss";
-import bulbasaur from "../../assets/bulbasaur.png";
-import nidoqueen from "../../assets/nidoqueen.png";
-import groudon from "../../assets/groudon.png";
-import rowlet from "../../assets/rowlet.png";
 
 export const ShoppingContent = () => {
     const shoppingCards = [
         {
             name: 'Bulbasaur',
-            img: bulbasaur,
+            img: 'assets/bulbasaur.png'
+
         },
         {
             name: 'Nidoqueen',
-            img: nidoqueen,
+            img: 'assets/nidoqueen.png'
         },
         {
             name: 'Groudon',
-            img: groudon,
+            img: 'assets/groudon.png'
         },
         {
             name: 'Rowlet',
-            img: rowlet,
+            img: 'assets/rowlet.png'
         }
     ];
     const shoppingModals = [
         {
             name: 'Bulbasaur',
-            img: bulbasaur,
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            img: 'assets/bulbasaur.png',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            cost: 50
         },
         {
             name: 'Nidoqueen',
-            img: nidoqueen,
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            img: 'assets/nidoqueen.png',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            cost: 80
         },
         {
             name: 'Groudon',
-            img: groudon,
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            img: 'assets/groudon.png',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            cost: 70
         },
         {
             name: 'Rowlet',
-            img: rowlet,
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            img: 'assets/rowlet.png',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            cost: 90
         }
     ];
     const [openedModal, setOpenedModal] = useState(
@@ -76,10 +77,11 @@ export const ShoppingContent = () => {
                 {
                     //eslint-disable-next-line
                     shoppingModals.map((modal, index) => {
-                    if(openedModal[index])
-                        return (
-                            <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()} />
-                        );
+                        if(openedModal[index]) {
+                            return (
+                                <ContentModal key={index} show={showModal} data={modal} onClose={() => closeModal()} buy={true} />
+                            );
+                        }
                 })}
         </div>
     );

@@ -1,9 +1,14 @@
 :root {
   --primary-font: "Poppins";
-  --secondary-font: "Inter";
+  --secondary-font: "Nunito";
   --border-color: #564789;
   --text-color: #38375A;
   --background-color: #FCFCFC;
+  --purple-color: #564789;
+  --grey-color: #E1E1E1;
+  --yellow-color: #FFBD12;
+  --red-color: #C16767;
+  --brown-color: #804936;
 }
 * {
   box-sizing: border-box;

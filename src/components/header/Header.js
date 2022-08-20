@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import pokemonLogo from "../../assets/pokemonLogo.png";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -16,7 +15,7 @@ export const Header = () => {
                     <span className="bar"></span>
                     <span className="bar"></span>
                 </div>
-                <img src={pokemonLogo} alt="Pokemon logo"/>
+                <img src="assets/pokemonLogo.png" alt="Pokemon logo"/>
                 <div className={ "links " + mobileNavActive }>
                     <Link className="link" to="/">Home</Link>
                     <Link className="link" to="/shop">Shop</Link>
@@ -25,7 +24,7 @@ export const Header = () => {
                 </div>
             </div>
             <div className="laptop-header">                
-                <img src={pokemonLogo} alt="Pokemon logo"/>
+                <img src="assets/pokemonLogo.png" alt="Pokemon logo"/>
             </div>
         </div>
     );

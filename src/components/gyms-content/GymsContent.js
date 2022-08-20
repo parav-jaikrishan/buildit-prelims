@@ -2,49 +2,45 @@ import React, { useState } from 'react';
 import { Card } from '../card/Card';
 import { ContentModal } from '../content-modal/ContentModal';
 import "./GymsContent.scss";
-import bulbasaur from "../../assets/bulbasaur.png";
-import nidoqueen from "../../assets/nidoqueen.png";
-import groudon from "../../assets/groudon.png";
-import rowlet from "../../assets/rowlet.png";
 
 export const GymsContent = () => {
     const gymCards = [
         {
             name: 'Bulbasaur',
-            img: bulbasaur,
+            img: 'assets/bulbasaur.png',
         },
         {
             name: 'Nidoqueen',
-            img: nidoqueen,
+            img: 'assets/nidoqueen.png',
         },
         {
             name: 'Groudon',
-            img: groudon,
+            img: 'assets/groudon.png',
         },
         {
             name: 'Rowlet',
-            img: rowlet,
+            img: 'assets/rowlet.png',
         }
     ];
     const gymModals = [
         {
             name: 'Bulbasaur',
-            img: bulbasaur,
+            img: 'assets/bulbasaur.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             name: 'Nidoqueen',
-            img: nidoqueen,
+            img: 'assets/nidoqueen.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             name: 'Groudon',
-            img: groudon,
+            img: 'assets/groudon.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             name: 'Rowlet',
-            img: rowlet,
+            img: 'assets/rowlet.png',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }
     ];

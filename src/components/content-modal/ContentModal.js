@@ -2,7 +2,7 @@ import React from "react";
 import "./ContentModal.scss";
 
 export const ContentModal = props => {
-    const { data, show } = props;
+    const { data, show, buy } = props;
     return (
         <div className={`content-modal ${show}`} onClick={props.onClose}>
             <div className="modal-content">
@@ -10,7 +10,8 @@ export const ContentModal = props => {
                 <img className="shop-img" src={data.img} alt={data.name}/>
                 <h1>{data.name}</h1>
                 <p>{data.content}</p>
-                {props.buy && <button className='buy'>Buy Now</button>}
+                { data.cost && <p className="cost">Cost: {data.cost}</p>}
+                {buy && <button className='buy' onClick={props.onClose}>Buy Now</button>}
             </div>
         </div>
     );
