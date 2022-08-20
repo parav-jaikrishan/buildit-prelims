@@ -25,6 +25,22 @@
   height: 10em;
   margin-right: 2em;
 }
+.card.brown {
+  background-color: #D87F4C;
+  color: white;
+}
+.card.green {
+  background-color: #48d0b0;
+  color: white;
+}
+.card.orange {
+  background-color: #fb6c6c;
+  color: white;
+}
+.card.blue {
+  background-color: #76bdfe;
+  color: white;
+}
 @media (min-width: 768px) {
   .card {
     margin-right: 5em;

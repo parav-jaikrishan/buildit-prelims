@@ -135,12 +135,12 @@ export const PokedexContent = () => {
                         pokedexCards.map((card, index) => {
                         if(card.name.toLowerCase().includes(input)) {
                             return (
-                                <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
+                                <Card key={index} name={card.name} image={card.img} color={card.color} clicked={() => openModal(index)}/>
                             );
                         }
                         if(input === "") {
                             return (
-                                <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
+                                <Card key={index} name={card.name} image={card.img} color={card.color} clicked={() => openModal(index)}/>
                             );
                         }
                     })}
