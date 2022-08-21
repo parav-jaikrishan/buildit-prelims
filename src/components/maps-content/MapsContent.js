@@ -7,7 +7,7 @@ export const MapsContent = () => {
     const mapCards = [
         {
             name: 'Map',
-            img: 'assets/centre_map.png',
+            img: 'assets/map.png',
         },
         {
             name: 'Topaz Gym',
@@ -24,7 +24,7 @@ export const MapsContent = () => {
     ];
     const mapModals = [
         {
-            img: 'assets/centre_map.png'
+            img: 'assets/map.png'
         },
         {
             name: 'Topaz Gym',

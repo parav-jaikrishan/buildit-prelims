@@ -81,6 +81,10 @@
         }
     }
 }
+.content-modal .modal-content.map img { 
+    height: 15em;
+    margin: 0.5em auto;
+}
 .content-modal.show {
     transform: scale(1);
     pointer-events: all;
