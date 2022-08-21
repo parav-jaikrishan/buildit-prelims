@@ -40,7 +40,8 @@ export const MapsContent = () => {
         {
             name: 'Ruby Gym',
             img: 'assets/gym_1.png',
-            content: `The gym trainer here is known to be very fierce and unforgiving with his moves. The strongest of the three, this trainer has been practising the art for years.`
+            content: `The gym trainer here is known to be very fierce and unforgiving with his moves. The strongest of the three, this trainer 
+            has been practising the art for years.`
         }
     ];
     const [openedModal, setOpenedModal] = useState(
