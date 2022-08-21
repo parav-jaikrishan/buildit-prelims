@@ -10,8 +10,16 @@ export const MapsContent = () => {
             img: 'assets/centre_map.png',
         },
         {
-            name: 'Gym',
-            img: 'assets/gym_2.png',
+            name: 'Topaz Gym',
+            img: 'assets/gym_1.png'
+        },
+        {
+            name: 'Sapphire Gym',
+            img: 'assets/gym_2.png'
+        }, 
+        {
+            name: 'Ruby Gym',
+            img: 'assets/gym_3.png'
         }
     ];
     const mapModals = [
@@ -21,9 +29,20 @@ export const MapsContent = () => {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
-            name: 'Gym',
+            name: 'Topaz Gym',
+            img: 'assets/gym_1.png',
+            content: `The gym trainer here is known to be very cheerful and optimistic. Fighting him will be an enlightening experience. 
+            Even though the battle will be tough, a defeat won't hurt as much.`
+        },
+        {
+            name: 'Sapphire Gym',
             img: 'assets/gym_2.png',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            content: `The gym trainer here is known to be serene and calm. His pokemons have unpredictable moves, always backed up by his wisdom.`
+        }, 
+        {
+            name: 'Ruby Gym',
+            img: 'assets/gym_3.png',
+            content: `The gym trainer here is known to be very fierce and unforgiving with his moves. The strongest of the three, this trainer has been practising the art for years.`
         }
     ];
     const [openedModal, setOpenedModal] = useState(

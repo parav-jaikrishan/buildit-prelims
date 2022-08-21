@@ -56,7 +56,7 @@ export const ShoppingContent = () => {
         {
             name: 'Recovery Potion',
             img: 'assets/potion_recovery.png',
-            content: 'A wound medicine. It restores the HP of one Pokémon by 30 points.',
+            content: 'It is used to wake the Pokémon that falls unconscious during battle.',
             cost: 80
         },
         {
@@ -132,7 +132,9 @@ export const ShoppingContent = () => {
             <p>Click to open a detailed view of all the things you can buy at Pokemon's New Delhi center.</p>
             <input type="text" placeholder='Search' onChange={inputHandler}/>
             <div className="card-container">
-                {shoppingCards.map((card, index) => {
+                {   
+                    //eslint-disable-next-line
+                    shoppingCards.map((card, index) => {
                     if(card.name.toLowerCase().includes(input)) {
                         return (
                             <Card key={index} name={card.name} image={card.img} clicked={() => openModal(index)}/>
