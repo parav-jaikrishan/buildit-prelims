@@ -80,9 +80,6 @@
             }
         }
     }
-    .modal-content.map img {
-        margin-right: 25%;
-    }
 }
 .content-modal.show {
     transform: scale(1);
@@ -173,8 +170,7 @@
             }
         }
     }
-    .content-modal .modal-content.map img {
-        margin-right: 30%;
-        height: 18em;
+    .content-modal .modal-content.map img { 
+        height: 25em;
     }
 }
