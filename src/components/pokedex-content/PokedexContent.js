@@ -62,6 +62,7 @@ export const PokedexContent = () => {
             img: 'assets/qutubex.png',
             color: 'brown',
             content: `Emerged from the prehistoric walls of the renown minaret, The Qutub Minar, Qutubex is one of the specialties of Pokemon's New Delhi Centre`,
+            type: "Rock/Poison",
             stats: {
                 hp: 75,
                 attack: 83,
@@ -72,6 +73,7 @@ export const PokedexContent = () => {
             name: 'Bulbasaur',
             img: 'assets/bulbasaur.png',
             color: 'green',
+            type: "Grass/Poison",
             content: `Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.`,
             stats: {
                 hp: 20,
@@ -83,6 +85,7 @@ export const PokedexContent = () => {
             name: 'Ivysaur',
             img: 'assets/ivysaur.png',
             color: 'green',
+            type: "Grass/Poison",
             content: `There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.`,
             stats: {
                 hp: 30,
@@ -105,6 +108,7 @@ export const PokedexContent = () => {
             name: 'Charmander',
             img: 'assets/charmander.png',
             color: 'orange',
+            type: "Fire",
             content: `It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.`,
             stats: {
                 hp: 20,
@@ -116,6 +120,7 @@ export const PokedexContent = () => {
             name: 'Charmeleon',
             img: 'assets/charmeleon.png',
             color: 'orange',
+            type: "Fire",
             content: `It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.`,
             stats: {
                 hp: 30,
@@ -127,6 +132,7 @@ export const PokedexContent = () => {
             name: 'Charizard',
             img: 'assets/charizard.png',
             color: 'orange',
+            type: "Fire/Flying",
             content: `It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.`,
             stats: {
                 hp: 35,
@@ -138,6 +144,7 @@ export const PokedexContent = () => {
             name: 'Squirtle',
             img: 'assets/squirtle.png',
             color: 'blue',
+            type: "Water",
             content: `Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.`,
             stats: {
                 hp: 20,
@@ -149,6 +156,7 @@ export const PokedexContent = () => {
             name: 'Wartortle',
             img: 'assets/wartortle.png',
             color: 'blue',
+            type: "Water",
             content: `Its tail is large and covered with rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.`,
             stats: {
                 hp: 30,
@@ -160,6 +168,7 @@ export const PokedexContent = () => {
             name: 'Blastoise',
             img: 'assets/blastoise.png',
             color: 'blue',
+            type: "Water",
             content: `Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from adistance of over 160 feet.`,
             stats: {
                 hp: 25,

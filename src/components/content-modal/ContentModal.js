@@ -10,6 +10,7 @@ export const ContentModal = props => {
                 <span className="close" onClick={props.onClose}>&times;</span>
                 <img className="shop-img" src={data.img} alt={data.name}/>
                 <h1>{data.name}</h1>
+                { data.type && <h2>Type: {data.type}</h2>}
                 <p>{data.content}</p>
                 { data.cost && <p className="cost">Cost: {data.cost} <FaCoins/></p>}
                 {buy && 
